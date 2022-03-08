@@ -49,6 +49,8 @@ keys = [
   Key([mod], "f", lazy.spawn("nautilus")),
   # Terminal
   Key([mod], "Return", lazy.spawn("alacritty")),
+  # Editor de texto
+  Key([mod], "e", lazy.spawn("alacritty -e nvim")),
   # Volume
   Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
   Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
